@@ -147,3 +147,7 @@ select * from tbProdutos;
 select * from tbVendas;
 
 
+
+-- Inner Join
+
+select func.nome as 'Nome do Funcionário', usu.nome as 'Nome do Usuário' from tbUsuarios as usu inner join tbFuncionarios as func on usu.codFunc = func.codFunc where func.codFunc = 2;
